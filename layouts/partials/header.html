@@ -22,6 +22,7 @@
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
+          {{ if not (eq .Site.Params.sidebar.enable true) }}
           <div class='header-info'>
             {{- if eq .Kind "home" -}}
               <h1 class='site-title title'>{{ .Site.Title }}</h1>
@@ -30,6 +31,7 @@
             {{- end -}}
             <p class='desc site-desc'>{{ .Site.Params.info.description }}</p>
           </div>
+          {{ end }}
         </div>
       </header>
 
