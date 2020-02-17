@@ -10,13 +10,18 @@ html {
 
 blockquote,
 q {
-  quotes: '' '';
+  // quotes: '' '';
 
   &:after,
   &:before {
     content: '';
   }
-
+  cite {
+    text-align: right;
+    &:before {
+      content: ' — ' ;
+    }
+  }
   :last-child {
     margin-bottom: 0;
   }
@@ -25,7 +30,7 @@ q {
 hr {
   border: 0;
   height: 1px;
-  margin: 2em 0;
+  margin: 1.1em 0;
   background-color: $color__background-hr;
 }
 
