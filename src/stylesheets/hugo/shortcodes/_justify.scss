@@ -1,0 +1,17 @@
+.align-justify {
+  text-align: justify;
+
+  & > blockquote {
+    display: inline-block;
+  }
+
+  & > ol,
+  & > ul {
+    display: inline-block;
+    text-align: initial;
+  }
+
+  li {
+    word-wrap: normal;
+  }
+}
