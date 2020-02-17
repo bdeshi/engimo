@@ -11,7 +11,9 @@
 <section class='widget widget-taxonomy_cloud sep-after'>
   <header>
     <h4 class='title widget-title'>
-      {{- ( $config.title | default ( i18n $taxonomySingular 2 ) ) -}}
+      <a href="/{{ $taxonomy }}">
+        {{- ( $config.title | default ( i18n $taxonomySingular 2 ) ) -}}
+      </a>
     </h4>
   </header>
 
