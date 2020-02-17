@@ -1,4 +1,4 @@
-<div class='text-shortcode' style='
+<span class='text-shortcode' style='
 {{- if .IsNamedParams -}}
   {{- with or ( .Get "s" ) ( .Get "size" ) -}}
     font-size: {{- . -}}em;
@@ -14,4 +14,4 @@
 {{- end -}}
 '>
   {{- .Inner | markdownify -}}
-</div>
+</span>
